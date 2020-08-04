@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+#main_nav a{
+    color: #f6f7f8;
+    background: #254441;
+    display: block;
+    height: 64px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 0.4s;
+}
+
+#main_nav a:hover{
+    background: #305753;
+}
+
+#main_nav ul{
+    list-style: none;
+    display: flex;
+}
+#main_nav li{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.submenu li{
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+#main_nav li:hover .submenu > li{
+    display: block;
+    top: 0;
+}
+
+.submenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu li{
+    position: relative;
+}
+
+.submenu li:hover .submenu-2 li{
+    display: block;
+}
+
+.submenu-2 li{
+    display: none;
+}
+
+.submenu-2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+}
+
+.arrow{
+    margin-left: 8px;
+    color: #eee;
+    font-size: 12px;
+}
+
+h1{
+    font-size: 72px;
+    text-transform: capitalize;
+}
+
+section{
+    background: #f2f4f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 64px);
+}
